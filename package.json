@@ -6,8 +6,7 @@
   "license": "MIT",
   "scripts": {
     "serve": "live-server public/",
-    "build:dev": "webpack",
-    "build:prod": "webpack -p --env production",
+    "build": "webpack",
     "dev-server": "webpack-dev-server",
     "test": "jest --config=jest.config.json"
   },
@@ -26,7 +25,7 @@
     "jest": "20.0.4",
     "live-server": "^1.2.1",
     "moment": "2.18.1",
-    "node-sass": "4.5.3",
+    "node-sass": "6.0.0",
     "normalize.css": "7.0.0",
     "raf": "3.3.2",
     "react": "16.0.0",
