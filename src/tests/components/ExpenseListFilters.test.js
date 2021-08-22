@@ -1,8 +1,11 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import moment from 'moment';
 import { ExpenseListFilters } from '../../components/ExpenseListFilters';
 import { filters, altFilters } from '../fixtures/filters';
+
+configure({adapter: new Adapter()});
 
 let setTextFilter, sortByDate, sortByAmount, setStartDate, setEndDate, wrapper;
 

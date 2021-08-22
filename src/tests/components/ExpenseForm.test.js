@@ -1,8 +1,11 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import moment from 'moment';
 import ExpenseForm from '../../components/ExpenseForm';
 import expenses from '../fixtures/expenses';
+
+configure({adapter: new Adapter()});
 
 test('should render ExpenseForm correctly', () => {
   const wrapper = shallow(<ExpenseForm />);
