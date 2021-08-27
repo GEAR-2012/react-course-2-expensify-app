@@ -1,10 +1,7 @@
 import React from "react";
-import { shallow, configure } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
+import { shallow } from "enzyme";
 import { ExpenseList } from "../../components/ExpenseList";
 import expenses from "../fixtures/expenses";
-
-configure({ adapter: new Adapter() });
 
 test("should render ExpenseList with expenses", () => {
   const wrapper = shallow(<ExpenseList expenses={expenses} />);

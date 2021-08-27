@@ -1,10 +1,7 @@
 import React from "react";
-import { shallow, configure } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
+import { shallow } from "enzyme";
 import expenses from "../fixtures/expenses";
 import { EditExpensePage } from "../../components/EditExpensePage";
-
-configure({ adapter: new Adapter() });
 
 let editExpense, removeExpense, history, wrapper;
 
