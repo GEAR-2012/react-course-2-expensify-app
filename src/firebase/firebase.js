@@ -1,4 +1,3 @@
-// CRUD operations with firebase database (Create, Read, Update, Delete)
 import * as firebase from "firebase";
 
 const firebaseConfig = {
